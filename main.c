@@ -11,13 +11,7 @@ int main() {
         
         for (int j = 0; j < cols; j++) {
 
-            if (j == cols - 1) {
-                printf("%d", matrix[i][j]);
-            }
-            else
-            {
-                printf("%d | ", matrix[i][j]);
-            }
+            (j == cols - 1) ? printf("%d", matrix[i][j]) : printf("%d | ", matrix[i][j]);
         }
 
         (i == rows - 1) ? printf("\n") : printf("\n----------\n");
