@@ -1,0 +1,49 @@
+Git e GitHub
+
+O Git funciona igual a um terminal.
+O Git também usa escopo de configurações, elas são:
+--global : usada pra todos os processos Git
+--system : usada pra todos os processos Git no sistema operacional
+--local : usada pras configurações do repositório
+
+Conceitos importantes:
+branch -> um "ramo" do código. cada branch é independente, ou seja, o commit de uma branch pode não existir em outra branch
+repositório -> lugar onde fica armazenado o código de um programa, os mais conhecidos são os repositórios do GitHub
+
+Comandos:
+
+$ ls = lista todos os arquivos na pasta
+$ clear = limpa o terminal
+$ cd <nome> = muda pro diretório escolhido
+$ mkdir <nome> = cria um novo diretório
+$ cat <nome> = lê o conteúdo do arquivo escolhido
+$ rm -rf .git = apaga o repositório Git
+$ touch <nome> = cria um arquivo com o nome escolhido
+
+
+Comandos Git:
+$ git config = acessa as configurações do Git
+$  "     "   list = lista todas as configurações do Git
+$ git clone <repositório> = clona um repositório do GitHub, pode ser via link ou via chave SSH
+$ git init = inicia um novo projeto no Git e define a pasta como o nome padrão (main)
+$ git remote -v = mostra o repositório ao qual o repositório local está vinculado
+$  "     "   add origin <url> = conecta o repositório local ao repositório remoto
+$ git status = mostra o status do commit
+$ git log = mostra o histórico de commits
+$ git restore <nome> = restaura uma alteração feita em um arquivo
+$ git add <nome> = adiciona/rastreia o arquivo especificado
+$ git commit = faz o commit dos arquivos adicionados com o git add
+  L> -m "<texto>" = adiciona uma mensagem ao commit
+  L> --amend = se refere ao último commit realizado
+$ git reset <hash> = volta no commit especificado
+  L> --soft = volta no commit com os arquivos rastreados
+  L> --mixes (padrão) = volta no commit com os arquivos não rastreados
+  L> --hard = volta no commit e apaga os arquivos adicionados depois daquele commit
+$ git branch = lista todas as branches do projeto
+$  "    "    -v = lista as branches e mostra qual commit elas se referenciam
+$  "    "    -d <nome> = remove a branch escolhida
+$ git checkout <nome> = troca para a branch indicada
+$  "      "    -b <nome> = cria uma nova branch
+$ git reflog = mostra um histórico mais detalhado
+$ git fetch <repostorio> <branch> = puxa os arquivos do repositório remoto
+$ git diff <branch> <repositorio> = mostra as diferenças entre a branch e o repositório
