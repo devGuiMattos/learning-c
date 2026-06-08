@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Testando se um numero eh par ou impar
 int main() {
     
     int matrix[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
